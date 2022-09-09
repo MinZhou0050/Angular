@@ -1,0 +1,26 @@
+<br>
+<div>
+<h3>Timeshee Approval</h3>
+</div>
+<br><br><br>
+
+<div class="container">
+<table class="table">
+  <th>Site Code</th>
+  <th>Contractor Name</th>
+  <th>Total Hrs</th>
+  <th>Total Amount</th>
+  <tr *ngFor="let item of employee; let o = odd; let e =even; let i = index; trackby: getItemFromTrackby;"
+    (mouseover)="highlightRow(item)">
+
+    <td>{{item.sitecode}}</td>
+    <td>{{item.contractorname}}</td>
+    <td>{{item.totalhour}}</td>
+    <td>{{item.totleamount}}</td>
+    <td>{{item.type}}</td>
+
+  </tr>
+</table>
+</div>
+  
+

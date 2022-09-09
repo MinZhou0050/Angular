@@ -1,0 +1,26 @@
+table {
+    margin:auto;
+    width: 90%;
+  }
+
+td
+  {
+      height:50px;
+      vertical-align:bottom;
+  }
+
+h3 {
+  margin:auto;
+  width: 90%;
+}
+
+mat-toolbar-row {
+  margin:auto;
+  width: 90%;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+

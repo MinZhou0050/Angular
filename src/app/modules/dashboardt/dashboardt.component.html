@@ -1,0 +1,34 @@
+<br>
+<div>
+<h3>Timeshee Submission</h3>
+</div>
+<section>
+    <mat-toolbar-row>
+      <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="example-button-row">
+        <a style="margin-top: 10px;" routerLink="/timesheet/add">Enter New timesheet</a>
+      </div>
+    </mat-toolbar-row>
+</section>
+
+
+<div class="container">
+<table class="table">
+  <th>Site Code</th>
+  <th>Contractor Name</th>
+  <th>Total Hrs</th>
+  <th>Total Amount</th>
+  <tr *ngFor="let item of employee; let o = odd; let e =even; let i = index; trackby: getItemFromTrackby;"
+    (mouseover)="highlightRow(item)">
+
+    <td>{{item.sitecode}}</td>
+    <td>{{item.contractorname}}</td>
+    <td>{{item.totalhour}}</td>
+    <td>{{item.totleamount}}</td>
+    <td>{{item.type}}</td>
+
+  </tr>
+</table>
+</div>
+  
+
+

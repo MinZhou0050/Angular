@@ -1,0 +1,63 @@
+<br>
+<div>
+<h3>Timeshee Submission</h3>
+</div>
+<br>
+<section>
+    <mat-toolbar-row>
+        <div>
+            Site Code: <input type="text" name="sitecode" value="" />&nbsp;&nbsp;&nbsp;&nbsp;
+            Contractor Name: <input type="text" name="sitecode" value="" />&nbsp;&nbsp;&nbsp;&nbsp;
+            Date: <input type="text" name="sitecode" value="" />
+        </div>
+    </mat-toolbar-row>
+</section>
+<br>
+
+<div class="box" title="Labor Entry">
+    <br>
+    <div > &nbsp;&nbsp;Labor code:&nbsp;
+    <mat-form-field appearance="fill">
+        <mat-label>text</mat-label>
+        <mat-select [formControl]="toppings" multiple>
+          <mat-select-trigger>
+            {{toppings.value?.[0] || ''}}
+            <span *ngIf="(toppings.value?.length || 0) > 1" class="example-additional-selection">
+              (+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+            </span>
+          </mat-select-trigger>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div > &nbsp;&nbsp;Labor code:&nbsp;
+    <mat-form-field appearance="fill">
+        <mat-label>text</mat-label>
+        <mat-select [formControl]="toppings" multiple>
+          <mat-select-trigger>
+            {{toppings.value?.[0] || ''}}
+            <span *ngIf="(toppings.value?.length || 0) > 1" class="example-additional-selection">
+              (+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+            </span>
+          </mat-select-trigger>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div > &nbsp;&nbsp;Labor code:&nbsp;
+    <mat-form-field appearance="fill">
+        <mat-label>text</mat-label>
+        <mat-select [formControl]="toppings" multiple>
+          <mat-select-trigger>
+            {{toppings.value?.[0] || ''}}
+            <span *ngIf="(toppings.value?.length || 0) > 1" class="example-additional-selection">
+              (+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+            </span>
+          </mat-select-trigger>
+          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<br>
+<div>
+<h3>Machine Mangament</h3>
+</div>
+<section>
+<mat-toolbar-row>
+  <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="example-button-row">
+    <a style="margin-top: 10px;" routerLink="/signup">Add New</a>
+    
+  </div>
+</mat-toolbar-row>
+</section>
+
+<div class="container">
+<table class="table">
+  <th>Machinecode Code</th>
+  <th>Description</th>
+  <th>Hourly Rate</th>
+  <th>Max Hours per day</th>
+  <tr *ngFor="let item of employee; let o = odd; let e =even; let i = index; trackby: getItemFromTrackby;"
+    (mouseover)="highlightRow(item)">
+
+    <td>{{item.machinecode}}</td>
+    <td>{{item.description}}</td>
+    <td>{{item.hourlyrate}}</td>
+    <td>{{item.maxhour}}</td>
+    <td><a >Edit</a></td>
+    <td><a >Delete</a></td>
+
+  </tr>
+</table>
+</div>
+  
+
